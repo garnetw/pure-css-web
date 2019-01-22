@@ -1,0 +1,269 @@
+@charset "UTF-8";
+/* CSS Document */
+/* Remove the default setting of margin and padding.*/
+	body, html {
+		width: 100%;
+   		height: 100%;
+   		margin: 0; 
+		padding: 0;
+	}
+	/* 3 sections above the background. */
+	#header {	
+  		position: relative;
+		background-color: #FFFFFF;
+		margin: 0 auto; 
+		height: 120px;
+	}
+	#main {
+		position: relative;
+		background-color: #FFFFFF;
+	}
+	/* Two sections in main section*/
+	#section1{
+		position: relative;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		text-align: center;
+		font-size: 0px;  /* Remove the default margin between divs.*/
+	}
+	#section2 {
+		position: relative;
+		text-align: center;
+		margin: 20px 0px;
+		padding: 0;
+		margin-bottom: 45px;
+	}
+	#footer {
+		position: relative;
+		background-color: rgb(188,155,93);
+		height: 120px;	
+	}
+
+	/* Within 'Header' section */
+	.address {
+		position: absolute;	 
+		top: 10px;
+		left: calc((50% - 90px) / 3); 
+		width: 90px; 
+		word-wrap: break-word;
+	}
+	.title {
+		position: absolute;
+		top: 10px;
+		left: calc((100% - 140px) / 2);
+		width: 140px;
+	}
+	/* Navigation section */
+	.nav{  
+		height: 25px;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		position: absolute;
+		border-top: 1px solid #eff0f0;
+		text-align: center;
+		width: 100%;
+	}  
+	.nav ul{  
+   		margin: 0 auto;
+		padding: 0;
+		list-style-type: none; 
+		overflow: hidden;
+		display: inline-block;
+	}  
+	.nav li{  
+   		float: left;
+		margin: 0 20px;
+	}  
+	.nav ul li a{ 
+		font-family: helvetica-w01-roman, helvetica-w01-roman, helvetica-lt-w10-roman, sans-serif;
+		text-align: center;
+		text-decoration: none;
+		padding: 9px 0px 6px 0px;
+		font-size: 9px;  
+    	color: #605E5E; 
+		display: block;
+		width: 73px;
+		background-color: #FFFFFF;
+	} 	
+	/* End of 'Header' section. */
+	
+	/* Fixed backgroud. */
+	.fixed-bg{
+		height: 350px;
+    	background-repeat: no-repeat;
+    	background-attachment: fixed;	
+	}
+	/* Image 6 */
+	.fixed-bg.top {
+    	background-image: url("https://static.wixstatic.com/media/84770f_0e9ac8bbd3a64d0490ed9279d2c0a5ff.png/v1/fill/w_890,h_1002,al_c,q_85,usm_0.66_1.00_0.01/84770f_0e9ac8bbd3a64d0490ed9279d2c0a5ff.webp");
+		background-position: 0px 26px;	
+		/*width: 650px; 
+		height: 350px;*/
+		background-size: cover;
+		
+	
+	}
+	/* Image 5 */
+	.fixed-bg.bottom {
+    	background-image: url("https://static.wixstatic.com/media/84770f_5fb7ede3836044a392366a78e96fec49.png/v1/fill/w_890,h_1002,al_c,q_85,usm_0.66_1.00_0.01/84770f_5fb7ede3836044a392366a78e96fec49.webp");
+		background-position: 0px -65px;
+		/*background-size: 650px 890px;*/
+		background-size: cover;
+	}
+	
+	/* Within 'Main' section. */
+	/* top portion */
+	.div1, .div2 {
+		position: relative;
+		display: inline-block;  /* makes two div in one row. */
+		vertical-align: top;
+		width: calc((100% - 100px) / 2);
+		max-width: 400px; /* Make sure that pictures won't be too large. */	
+	}
+	.div1 {
+		padding-top: 70px; /* div1 is lower.*/
+	}
+	.div2 {
+		padding-top: 20px;
+	}
+	.div3 {
+		max-width: 775px;
+		width: calc(100% - 100px - 25px);
+		position: relative;
+		margin: 0 auto;
+		padding: 0;
+		margin-bottom: 35px;
+	}
+	/* imgs in section1*/
+	.imgs {
+		display: block;
+		width: calc(100% - 25px);
+		margin: 0 auto;	
+		margin-bottom: 25px;
+	}
+	/* img in section2*/
+	.centralImg {
+		max-width: 775px;
+		width: calc(100%);	
+	}
+	.div-on-img {
+		position: absolute;
+		width: 230px;
+		height: 56px;
+		background-color: #FFFFFF;
+		top: calc(50% - 48px);
+		left: calc(50% - 115px);
+		text-align: center;
+		padding-top: 20px;
+		z-index: 6;
+	}
+	/* Paragraph in section1 */
+	.paragraph {
+		max-width: 375px; 
+		width: calc(100% - 25px);
+		margin: 0 auto; 
+		text-align: left;
+		word-wrap: break-word;
+		
+	}
+	/* Paragraph in section2 */
+	.paragraph_2 {
+		text-align: center;
+		max-width: 785px;
+		width: calc(100% - 100px - 25px); /* 多给了5px 因为感觉div1和div2中间有个多余的空隙。。。*/
+		margin: auto;
+	}
+	.spacing {
+		width: 100%;
+		padding: 5px 0px 20px 0px;
+		
+	}
+
+	/* Fonts*/
+	.address_font {
+		font-size: 7px; 
+		line-height: 0.3em;
+		color: #605E5E;
+		font-family: helvetica-w01-roman, helvetica-w01-roman, helvetica-lt-w10-roman, sans-serif;
+		letter-spacing: 0.03em;
+	}
+	.title_font {
+		font-size: 32px;
+		line-height: 0.4em;
+		color: rgb(188,155,93);
+		font-family: helvetica-w01-roman, helvetica-w01-roman, helvetica-lt-w10-roman, sans-serif;
+		letter-spacing: 0.15em;
+	}
+	/* titles in yellow*/
+	.font_1 {
+		font-family: 'Libre Baskerville regular', serif;
+		font-style: italic;
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 0.1em;
+		letter-spacing: 0.02em;
+		color: rgb(188, 155, 93);
+		
+	}
+	/* paragraphs in sections*/
+	.font_2 {
+		font-size: 9px; 
+		line-height: 0.5em;
+		color: #605E5E;
+		font-family: helvetica-w01-roman, helvetica-w01-roman, helvetica-lt-w10-roman, sans-serif;
+		letter-spacing: 0.05em;
+	}
+	/* OUR RESTAURANT font */	
+	.font_3 {
+		font-size: 7px; 
+		line-height: 0.4em;
+		color: #605E5E;
+		font-family: helvetica-w01-roman, helvetica-w01-roman, helvetica-lt-w10-roman, sans-serif;
+		letter-spacing: 0.15em;	
+	}
+	.font_4 {
+		font-size: 6px; 
+		font-weight: 500;
+		line-height: 0.4em;
+		color: #605E5E;
+		font-family: helvetica-w01-roman, helvetica-w01-roman, helvetica-lt-w10-roman, sans-serif;
+		letter-spacing: 0.15em;	
+	}
+	.font_5 {
+		font-size: 15px; 
+		line-height: 0.5em;
+		color: #605E5E;
+		font-family: helvetica-w01-roman, helvetica-w01-roman, helvetica-lt-w10-roman, sans-serif;
+		letter-spacing: 0.05em;
+		text-decoration: none;
+	}
+	.font_5:hover, .font_5:active {
+		color: rgb(210, 210, 210);
+	}
+	/* Read more link style*/
+	.link {
+		text-decoration: none;
+		font-size: 9px; 
+		color: black;
+		font-family: helvetica-w01-roman, helvetica-w01-roman, helvetica-lt-w10-roman, sans-serif;
+		text-align: left;
+	}
+	.link:hover, .link:active {
+		color: rgb(210, 210, 210);
+	}	
+
+	.logo-section {
+		position: absolute;
+		top: 20px;
+		right: 112px;
+	}
+	.logo-font {
+		font-size: 8px; 
+		line-height: 0.2em;
+		color: white;
+		font-family: helvetica-w01-roman, helvetica-w01-roman, helvetica-lt-w10-roman, sans-serif;
+		letter-spacing: 0.04em;
+	}
+	
